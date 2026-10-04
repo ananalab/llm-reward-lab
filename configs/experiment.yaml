@@ -1,0 +1,11 @@
+# Main campaign. Everything that differs between conditions is listed here.
+llm:
+  model: gemma4:31b-cloud
+  temperature: 1.0
+tasks: [cartpole_swingup, cheetah_run, cheetah_stand]
+conditions: [A, B, C]
+K: 4          # candidates per iteration
+N: 3          # iterations for B and C; A samples K*N candidates in one go
+seeds: [0, 1]
+max_fixes: 2  # rounds of "here is your error, fix it"
+final_seeds: [0, 1, 2]

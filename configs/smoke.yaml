@@ -1,0 +1,12 @@
+# Tiny CPU run to check the whole loop end to end.
+llm:
+  model: gemma4:31b-cloud
+  temperature: 1.0
+tasks: [cartpole_swingup]
+conditions: [A, B, C]
+K: 2
+N: 2
+seeds: [0]
+max_fixes: 2
+final_seeds: [0]
+smoke: true
