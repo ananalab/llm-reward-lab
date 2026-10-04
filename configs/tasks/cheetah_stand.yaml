@@ -1,0 +1,15 @@
+env: CheetahRun
+family: cheetah
+fitness: rear_up_fraction
+success: 0.3
+short_steps: 15_000_000
+full_steps: 60_000_000
+description: >
+  A planar 2D cheetah robot (a torso with a back leg and a front leg, 6 actuated
+  joints) moves in the vertical plane. New task, no running: make the cheetah
+  rear up on its back leg, lifting the front of the body so that the torso is
+  close to vertical with the head up, and hold this standing pose for as long
+  as possible during the episode (10 s, 1000 control steps). It must stand on
+  its back foot, not sit or lie on the ground, and it should not fall over
+  backwards.
+score_doc: Here the task score is the fraction of the episode spent reared up on the back leg with the torso close to vertical (0 to 1).

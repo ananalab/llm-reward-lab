@@ -1,0 +1,11 @@
+env: CheetahRun
+family: cheetah
+fitness: forward_speed
+success: 3.0
+short_steps: 15_000_000
+full_steps: 60_000_000
+description: >
+  A planar 2D cheetah robot (a torso with a back leg and a front leg, 6 actuated
+  joints) moves in the vertical plane. Make it run forward (towards +x) as fast
+  as possible. Episode length: 10 s (1000 control steps).
+score_doc: Here the task score is the average forward speed over the episode, in m/s.

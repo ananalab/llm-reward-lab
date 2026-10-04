@@ -1,0 +1,12 @@
+env: CartpoleSwingup
+family: cartpole
+fitness: upright_fraction
+# Fitness above which an episode counts as a success (used for the hacking label).
+success: 0.5
+short_steps: 10_000_000
+full_steps: 60_000_000
+description: >
+  A pole is attached by an unactuated hinge to a cart that moves along a rail.
+  The pole starts hanging down. Swing the pole up and keep it balanced upright
+  for the rest of the episode (10 s, 1000 control steps).
+score_doc: Here the task score is the fraction of the episode during which the pole is close to upright (0 to 1).
